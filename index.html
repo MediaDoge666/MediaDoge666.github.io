@@ -19,7 +19,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Muse","version":"8.7.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"rounded":false,"rotated":false},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","version":"8.7.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"rounded":false,"rotated":false},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
 <meta property="og:type" content="website">
 <meta property="og:title" content="MediaDoge">
 <meta property="og:url" content="http://example.com/index.html">
@@ -84,6 +84,7 @@
         <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li>
         <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a></li>
         <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a></li>
   </ul>
 </nav>
 
@@ -193,10 +194,16 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
-      
 
-      <time title="Created: 2021-09-08 20:48:47 / Modified: 20:50:42" itemprop="dateCreated datePublished" datetime="2021-09-08T20:48:47+08:00">2021-09-08</time>
+      <time title="Created: 2021-09-08 20:48:47" itemprop="dateCreated datePublished" datetime="2021-09-08T20:48:47+08:00">2021-09-08</time>
     </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-09-12 13:43:21" itemprop="dateModified" datetime="2021-09-12T13:43:21+08:00">2021-09-12</time>
+      </span>
 
   
 </div>
@@ -208,10 +215,17 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>##第一章</p>
-<p>内容</p>
-<p>##第二章</p>
-<p>内容</p>
+          <h1 id="我的第一篇文章"><a href="#我的第一篇文章" class="headerlink" title="我的第一篇文章"></a>我的第一篇文章</h1><p>我为什么要建这样一个网站呢？</p>
+<p>其实我很早就有设想，想建一个自己的网站因为能<del>装逼</del></p>
+<p>这个网站我是用<strong>gitpage+hexo</strong>搭建的如果你自己也想建一个的话推荐一些教程给你<br><a target="_blank" rel="noopener" href="https://blog.csdn.net/sinat_37781304/article/details/82729029"> hexo史上最全搭建教程</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/390f202c5b0e">5分钟搞定个人博客</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Yb411a7ty?from=search&seid=8526418617651586527&spm_id_from=333.337.0.0">手把手教你从0开始搭建自己的个人博客bilibili</a></p>
+<p>最好用<strong>git</strong>输命令，用<strong>cmd</strong>会有种种问题</p>
+<p>一下是一些基础命令</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">hexo d #部署网站</span><br><span class="line">hexo serve #启动服务器</span><br><span class="line">hexo clean #清除缓存文件和已生成的静态文件</span><br><span class="line">hexo g #生成静态文件</span><br><span class="line">hexo -v #显示Hexo版本</span><br></pre></td></tr></table></figure>
+
+<p>好了，现在开始做你自己的网站吧！</p>
+<p>更多命令前往<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/commands.html">Hexo官网</a>查看</p>
 
       
     </div>
@@ -318,14 +332,14 @@
   </span>
   <span class="author" itemprop="copyrightHolder">Jared_2020</span>
 </div>
-  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a>
   </div>
     </div>
   </footer>
 
   
   <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
-<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
 
   
 
